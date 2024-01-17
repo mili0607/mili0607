@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Tarea calculo IMC Y comvercion de grados </title>
+    <script>
+        // calculo IMC
+        function calcIMC(peso, altura) {
+            var IMC = peso / ((altura)*(altura));
+            return IMC;
+
+        }
+
+        function ejecutarCalculoIMC() {
+            var peso = campoPeso.value;
+            var altura = campoAltura.value;
+            var result = calcIMC(peso, altura)
+            alert(result);
+        }
+        // convertir gados C a F
+
+        function comCF(celsius) {
+            var fahrenheit = (1.8*celsius) + 32 ;
+            return fahrenheit;
+
+        }
+
+        function ejecutarCaF() {
+            var celsius = campoC.value;
+            var result = comCF(celsius)
+            alert(result);
+        }
+        // convertir gados F a C
+
+        function comFC(fahrenhei) {
+            var celsiu = (fahrenhei - 32) / 1.8;
+            return celsiu;
+
+        }
+
+        function ejecutarFaC() {
+            var fahrenhei = campoF.value;
+            var result = comFC(fahrenhei)
+            alert(result);
+        }
+    </script>
+</head>
+<body>
+    <h1>tarea 1 Calcular IMC</h1>
+    <p>
+        en esta practica,vamos a calcular el IMC
+
+    </p>
+
+    <h2> IMC </h2>
+    <p>
+        intruduce tu peso y altura en m
+    </p>
+    peso: <input type="number" id="campoPeso" />
+    Altura en m: <input type="number" id="campoAltura" />
+    <button onclick="ejecutarCalculoIMC()">Calculo IMC</button>
+
+
+    <h1>tarea 1.2 comvertir grados c° a F°</h1>
+    <p>
+        en esta practica,vamos a comvertir grados C° a F°
+
+    </p>
+
+    <h2> C° a F° </h2>
+    <p>
+        intruduce los grados celsius para comvertirlos a fahrenheit
+    </p>
+    grados celsius: <input type="number" id="campoC" />
+    <button onclick="ejecutarCaF()">Comvertir Celcius a fahrenheit </button>
+
+
+
+
+    <h1>tarea 1.3 comvertir grados F° a C°</h1>
+    <p>
+        en esta practica,vamos a comvertir grados F° a C°
+
+    </p>
+
+    <h2> F° a C° </h2>
+    <p>
+        intruduce los grados fahrenheit para comvertirlos Celsius
+    </p>
+    grados celsius: <input type="number" id="campoF" />
+    <button onclick="ejecutarFaC()">Comvertir fahrenheit a Celsius </button>
+
+</body>
+
+
+
+
+
+</html>
