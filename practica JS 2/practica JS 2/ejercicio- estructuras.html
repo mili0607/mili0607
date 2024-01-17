@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ejercicios estructuras </title>
+    <script>
+         // personas 
+        function describirPersona(persona) {
+            console.log(persona.nombre + " " + persona.apellido);
+            console.log("tiene" +  persona.edad  + "años y mide" +  persona.altura);
+
+        }
+
+        var pepito = {
+            nombre: "jose Juan",
+
+            apellido: "perez lopez",
+
+            edad: 54,
+
+            altura: 1.90,
+        };
+        describirPersona(pepito);
+
+
+        var claudia = {
+            nombre: "claudia ",
+
+            apellido: "contreras",
+
+            edad:31 ,
+
+            altura: 1.75,
+        };
+        describirPersona(claudia);
+
+        // telefonos 
+
+        function describirCelular(celular) {
+            console.log(celular.marca + " " + celular.modelo);
+            console.log("cuesta" + celular.costo + "pesos y tiene" + celular.memoria + "gb de memoria");
+
+        }
+
+        var motorola = {
+            marca: "motorola",
+            modelo: "motog",
+            costo: 2778 ,
+            memoria: 65,
+
+
+        };
+        describirCelular(motorola);
+
+
+       
+        //peliculas
+        //libros 
+  </script>
+</head>
+<body>
+
+</body>
+</html>

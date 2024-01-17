@@ -1,0 +1,37 @@
+﻿!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title> cuanta banco </title>
+    <script>
+        var miCuenta = {
+            propietario: "maria mendez",
+            saldo: 464525.60,
+            banco:"banco de bravo",
+            nip: 4567,
+        }
+
+        function retirarDinero() {
+            var monto = campoMonto.value;
+            if (monto> miCuenta.saldo) 
+
+        }
+        function consultarCuenta() {
+            panelresultado.innerHTML = miCuenta.propietario + "," + "tenes $"+ miCuenta.saldo +"en el banco"+ miCuenta.banco;
+
+
+        }
+
+        
+    </script>
+</head>
+<body>
+    <h1>cuenta bancaria</h1>
+    Monto: <input type="number" id="campoMonto" /><br />
+    <button>depositar</button><br/>
+    <button>retirar</button><br />
+    <button>consultar</button><br />
+    <div id="panelresultado"></div>
+
+
+</body>
+</html>
