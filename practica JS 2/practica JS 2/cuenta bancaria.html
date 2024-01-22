@@ -29,9 +29,14 @@
             }
         }
         function deposito() {
-            var monto = + campomonto.value;
-            
-            { panelResultado.innerHTML = "depositaste $" + monto + "ahora tienes" + miCuenta.saldo; }
+            var monto = campomonto.value;
+            if (monto < 5) {
+                panelResultado.innerHTML = "no se puede realizar tu depocito";
+            }
+            else {
+                miCuenta.saldo += monto ; 
+                    panelResultado.innerHTML = "depositaste $" + monto + "ahora tienes" + miCuenta.saldo;
+            }
            
 
         }
