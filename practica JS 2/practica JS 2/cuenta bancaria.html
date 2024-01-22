@@ -29,13 +29,16 @@
             }
         }
         function deposito() {
-            var monto = campomonto.value;
-            if (monto < 5) {
-                panelResultado.innerHTML = "no se puede realizar tu depocito";
+            if (camponip.value == miCuenta.nip)
+            {
+                var monto = + campomonto.value;
+                miCuenta.saldo += monto;
+                panelResultado.innerHTML = "depositaste $" + monto + "ahora tienes" + miCuenta.saldo;
+                
             }
             else {
-                miCuenta.saldo += monto ; 
-                    panelResultado.innerHTML = "depositaste $" + monto + "ahora tienes" + miCuenta.saldo;
+                 
+                    panelResultado.innerHTML = "nip incorrecto" ;
             }
            
 
