@@ -1,6 +1,7 @@
-﻿!DOCTYPE html>
+﻿  <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <meta charset="utf-8"/>
     <title> cuanta banco </title>
     <script>
         var miCuenta = {
@@ -10,27 +11,64 @@
             nip: 4567,
         }
 
-        function retirarDinero() {
-            var monto = campoMonto.value;
-            if (monto> miCuenta.saldo) 
-
-        }
         function consultarCuenta() {
-            panelresultado.innerHTML = miCuenta.propietario + "," + "tenes $"+ miCuenta.saldo +"en el banco"+ miCuenta.banco;
+            panelResultado.innerHTML = miCuenta.propietario + "," + "tenes $"+ miCuenta.saldo +"en el banco"+ miCuenta.banco;
+
+        }
+
+        function retira() {
+           
+            var monto = campomonto.value;
+            if (monto > miCuenta.saldo) {
+                panelResultado.innerHTML = "saldo insuficiente"
+            }
+            else {
+                miCuenta.saldo -= monto;
+                panelResultado.innerHTML = "retiraste $" + monto + ". te queda $" + miCuenta.saldo;
+
+            }
+        }
+        function deposito() {
+            var monto = + campomonto.value;
+            
+            { panelResultado.innerHTML = "depositaste $" + monto + "ahora tienes" + miCuenta.saldo; }
+           
+
+        }
+
+        function nipc() {
+            var nip = camponip.value;
+            if (nip != miCuenta.nip) {
+
+                panelResultado.innerHTML = "el nip es incorrecto";
+            }
+
+            else {
+                miCuenta.nip = 4567
+                panelResultado.innerHTML = "el nip es correcto continua"
+                }
+            
 
 
         }
+
+
+
+         
+
 
         
     </script>
 </head>
 <body>
     <h1>cuenta bancaria</h1>
-    Monto: <input type="number" id="campoMonto" /><br />
-    <button>depositar</button><br/>
-    <button>retirar</button><br />
-    <button>consultar</button><br />
-    <div id="panelresultado"></div>
+    <button onclick="nipc()">Nip</button><br />
+    nip:  <input type="number" id="camponip" /><br />
+    Monto: <input type="number" id="campomonto" /><br />
+    <button onclick="consultarCuenta()">consultar</button><br />
+    <button onclick="retira()">retirar</button><br />
+    <button onclick="deposito()">depositar</button><br />
+    <div id="panelResultado"></div>
 
 
 </body>

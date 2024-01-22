@@ -47,14 +47,80 @@
             costo: 2778 ,
             memoria: 65,
 
-
         };
         describirCelular(motorola);
 
+        var samsung = {
+            marca: "samsung",
+            modelo: "galaxya",
+            costo: 4599,
+            memoria: 256,
+
+        };
+        describirCelular(samsung);
 
        
         //peliculas
-        //libros 
+          function describirPeliculas(peliculas) {
+      console.log(peliculas.nombre +" " + "salio en el año" + peliculas.año);
+      console.log("es del genero de" + peliculas.genero + " y su director fue " + peliculas.director);
+
+        }
+
+        var coraline = {
+            nombre: "Coraline",
+
+            año: 2009,
+
+            genero: "terror infantil",
+
+            director: "Henry Selick",
+        };
+        describirPeliculas(coraline);
+
+
+         var tunombre = {
+            nombre: "your name",
+
+            año: 2016,
+
+            genero: "romance y fantasia",
+
+             director: "Makoto Shinkai",
+        };
+        describirPeliculas(tunombre);
+        
+        //libros
+
+        function describirLibro(libro) {
+            console.log(libro.nombre + " " + "salio en el año" + libro.año);
+            console.log("es del genero de" + libro.genero + " fue escrito por" + libro.autor);
+
+        }
+
+        var heartstopper = {
+            nombre: "Heartstopper",
+
+            año: 2018,
+
+            genero: "romance",
+
+            autor: " Alice Osemani",
+        };
+        describirLibro(heartstopper);
+
+        var eleanorypark = {
+            nombre: "Eleanor y Park",
+
+            año: 2012,
+
+            genero: "romance",
+
+            autor: " Rainbow Rowell",
+        };
+        describirLibro(eleanorypark);
+
+
   </script>
 </head>
 <body>

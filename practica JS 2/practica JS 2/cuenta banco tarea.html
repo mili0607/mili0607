@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>cuenta de banco </title>
+
+<script>
+    var miCuenta = {
+        propietario: "Oscar Orea",
+        saldo: 45362.76,
+        banco: "Banco de Bravos",
+        nip: 5432,
+    }
+    function consultarCuenta() {
+        panelResultado.innerHTML = miCuenta.propietario + "," + "tienes $" + miCuenta.saldo + "en el " + miCuenta.banco;
+    }
+    function retirardinero() {
+        var monto = campomonto.value;
+        if (monto > miCuenta.saldo) {
+            panelResultado.innerHTML = "no tienes saldo suficiente ";
+        }
+        else {
+            // el saldo es suficiente
+            miCuenta.saldo -= monto;
+            panelResultado.innerHTML = "retiraste $" + monto +"te quedan$" +miCuenta.saldo ;
+
+        }
+        function depositardinero() {
+            var monto = + campomonto.value;
+            { panelResultado.innerHTML = "depisitar $" + monto + "te quedan $" + miCuenta.saldo; }
+
+        }
+        function Nip() {
+            var nip = camponip.value;
+            if (nip != miCuenta.nip) {
+                panelResultado.innerHTML = " Nip incorrecto";
+            }
+            else {
+                miCuenta.nip = 5432,
+                    panelResultado.innerHTML = "el nip es correcto, puede continuar";
+            }
+
+        }
+
+</script>
+</head>
+<body>
+    <h1>cuenta de banco </h1>
+    <button onclick="Nip()"> nip </button>
+    Nip: <input type="number" id="camponip"/> <br/>
+    monto: <input type="number" id="campomonto" /> <br/>
+    <button onclick="consultarCuenta()" >consultar</button><br />
+    <button onclick="retirardinero()" >retirar</button><br />
+    <button onclick="depositardinero()" >depositar</button><br />
+    <div id ="panelResultado.innerHTML">
+    </div>
+</body>
+</html>
