@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pelea DnD</title>
+    <script>
+        var chicEspadas = {
+            nombre: "La temible Chica con 2 espadas",
+            hp: 200,
+            atk: 100,
+            def: 35,
+            exp: 100
+        }
+
+        var mike = {
+            nombre: "Mike Wozauski Endemoniado",
+            hp: 150,
+            atk: 50,
+            def: 90,
+            exp: 30
+        }
+
+        var dragonA = {
+            nombre: "Dragon Ojiazul Mamadisimo",
+            hp: 300,
+            atk: 90,
+            def: 90,
+            exp: 30
+        }
+
+        //Aqui va JS
+        function mounstruoRojoAtaca() {
+            console.log(mike.nombre + " Ataca");
+            chicEspadas.hp = chicEspadas.hp + chicEspadas.def - mike.atk;
+            console.log("la vida de la chica es de " + chicEspadas.hp)
+        }
+
+        function dragonAtaca() {
+            console.log(dragonA.nombre + " Ataca");
+            chicEspadas.hp = chicEspadas.hp + chicEspadas.def - dragonA.atk;
+            if (chicEspadas.hp > 0) {
+                console.log("La vida de la caballera baja a " + chicEspadas.hp);
+            }
+            if (chicEspadas.hp <= 0) {
+                alert("La vida de la caballera bajo a 0 y se murio por andar de mensa jaja")
+            }
+        }</script>
+    <style>
+        /* aqui va CSS*/
+
+        #calabozo {
+            width: 900px;
+            height: 600px;
+            background-image: URL("img/personajes/fondo.jpg");
+            background-size: cover;
+        }
+
+        /* podemos usar esta forma*/
+        .personaje {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        #monstroBola {
+            left: 300px;
+            top: 200px;
+        }
+
+        #dragonOjiazul {
+            left: 500px;
+            top: 200px;
+        }
+
+        /* o esta otra forma*/
+        #PersonaEspadas {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 400px;
+            top: 400px;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="calabozo">
+        <img id="monstroBola" class="personaje"
+             src="img/personajes/monstroRojo.png"
+             onclick="mounstruoRojoAtaca()" />
+        <img id="dragonOjiazul" class="personaje"
+             src="img/personajes/dragonAzul.png"
+             onclick="dragonAtaca()" />
+        <img id="PersonaEspadas" src="img/personajes/chicaEspadas.png" />
+    </div>
+</body>
+</html>
+
+
+
+function dragonAtaca() {
+    console.log(dragonA.nombre + " Ataca");
+    guerrera.hp = guerrera.hp + guerrera.defensa - guerrera.ataque;
+    if (guerrera.hp > 0) {
+        console.log("la guerrera " + guerrera.nombre + " ha sido herida, le quedan " + guerrera.hp);
+    }
+    if (chicEspadas.hp <= 0) {
+        alert("la guerrera")
+    }
+if (dragon.hp = dragon.hp - casadora.ataque) {
+    cazadora.hp = cazadora.hp - 15;
+    console.log("el dragon " + dragon.nombre + "ataca");
+    console.log("la cazadora" + cazadora.nombre + " ha recibido daños, ahora tiene" + cazadora.hp + "hp");
+
+}
