@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        var cruxio = {
+            conjuro: "cruxiooooo",
+            efecto: "tortura",
+
+        }
+
+        var ak = {
+            conjuro: "Avada kadabra",
+            efecto: "matar",
+        }
+
+
+        var slitherin = {
+
+            nombre: "slitherin",
+            emblema: "serpiente",
+
+        }
+
+        var hufflepuff = {
+
+            nombre: "hufflepuff",
+            emblema: "tejon",
+
+        }
+
+        var alohomora = {
+            conjuro: "alohomoraaaa",
+            efecto: "abrir cerraduras",
+        }
+
+
+        var se = {
+            conjuro: "slugulus Eructoooo",
+            efecto: "vomitar babosas",
+        }
+
+        var confundo = {
+            conjuro: "confundooooo",
+            efecto: "desorienta y confunde",
+        }
+
+        var grifindor = {
+
+            nombre: "grifindor",
+            emblema: "grifo",
+
+        }
+        var belatrix = {
+            nombre: "Belatrix",
+            apellido: "Lestrange",
+            casa: slitherin,
+            hechizoFavorito: ak,
+
+        }
+
+
+        var draco = {
+            nombre: "Draco",
+            apellido: "Malfoy",
+            casa: slitherin,
+            hechizoFavorito: cruxio,
+
+        }
+
+        var harry = {
+            nombre: "Harry",
+            apellido: "Potter",
+            casa: grifindor,
+            hechizoFavorito: alohomora,
+
+        }
+
+        var ron = {
+            nombre: "Ron",
+            apellido: "weasley",
+            casa: grifindor,
+            hechizoFavorito: se,
+
+        }
+        var rpomona = {
+            nombre: "Pomona",
+            apellido: "Sprout",
+            casa: hufflepuff,
+            hechizoFavorito: confundo,
+
+        }
+
+        var cedric = {
+            nombre: "Cedric",
+            apellido: "Diggory",
+            casa: hufflepuff,
+            hechizoFavorito: confundo,
+
+        }
+
+        // y lo presenta en la consola
+        function presentarMago() {
+
+            console.log(draco.nombre + " " + draco.apellido + " pertenece a la casa " + draco.casa.nombre + " cuyo emblema es " + draco.casa.emblema + " y su hechizo preferido es " + draco.hechizoFavorito.conjuro);
+            console.log(belatrix.nombre + " " + belatrix.apellido + " pertenece a la casa " + belatrix.casa.nombre + " cuyo emblema es " + belatrix.casa.emblema + " y su hechizo preferido es " + belatrix.hechizoFavorito.conjuro);
+            console.log(harry.nombre + " " + harry.apellido + " pertenece a la casa " + harry.casa.nombre + " cuyo emblema es " + harry.casa.emblema + " y su hechizo preferido es " + harry.hechizoFavorito.conjuro);
+            console.log(ron.nombre + " " + ron.apellido + " pertenece a la casa " + ron.casa.nombre + " cuyo emblema es " + ron.casa.emblema + " y su hechizo preferido es " + ron.hechizoFavorito.conjuro);
+            console.log(rpomona.nombre + " " + rpomona.apellido + " pertenece a la casa " + rpomona.casa.nombre + " cuyo emblema es " + rpomona.casa.emblema + " y su hechizo preferido es " + rpomona.hechizoFavorito.conjuro);
+            console.log(cedric.nombre + " " + cedric.apellido + " pertenece a la casa " + cedric.casa.nombre + " cuyo emblema es " + cedric.casa.emblema + " y su hechizo preferido es " + cedric.hechizoFavorito.conjuro);
+        }
+
+        //hechizo
+        console.log(ak.conjuro + " sirve para " + ak.conjuro + " pertenece a la casa " + draco.casa.nombre + " cuyo emblema es " + draco.casa.emblema + " y su hechizo preferido es " + draco.hechizoFavorito.conjuro);
+
+
+        // invoco la funcionpara presentar a draco
+        presentarMago(draco);
+        presentarMago(belatrix);
+        presentarMago(harry);
+        presentarMago(ron);
+        presentarMago(rpomona);
+        presentarMago(cedric);
+
+
+
+
+
+
+
+    </script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>
