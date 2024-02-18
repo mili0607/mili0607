@@ -34,7 +34,7 @@
         function casadoraAtaca() {
             console.log("casadora lanza ataque");
             dragon.hp = dragon.hp - 25;
-            console.log(dragon.nombre + " tiene " + dragon.hp + "hp");
+            console.log(dragon.nombre + " tiene " + dragon.hp + " hp");
             if (dragon.hp < 0) {
                 cazadora.exp = cazadora.exp + 15;
                 console.log("la casadora  " + cazadora.nombre + " a recibido 15 puntos de experiencia, ahora tiene " + cazadora.exp);
@@ -46,18 +46,18 @@
         function guerreraAtaca() {
             console.log("guerrera lanza ataque");
             dragon.hp = dragon.hp - 15;
-            console.log(dragon.nombre + " tiene " + dragon.hp + "hp");
+            console.log(dragon.nombre + " tiene " + dragon.hp + " hp");
             if (dragon.hp < 0) {
                 guerrera.exp = guerrera.exp + 20;
                 console.log("la gerrera  " + guerrera.nombre + " a recibido 20 puntos de experiencia, ahora tiene " + guerrera.exp);
 
                 if (guerrera.hp > 0) {
-                    console.log(guerrera.nombre + "la guerrera ha sido herida ha recibido daños")
+                    console.log(guerrera.nombre + " la guerrera ha sido herida ha recibido daños")
 
                 }
                 else {
                     dragon.exp = dragon.exp + 15;
-                    console.log(guerrera.nombre + "la guerrera ha sido herida ha sido derrotada ahora " + dragon.nombre + "tiene" + dragon.exp + "de experiencia")
+                    console.log(guerrera.nombre + " la guerrera ha sido herida ha sido derrotada ahora " + dragon.nombre + " tiene " + dragon.exp + " de experiencia")
                 }
             }
 
@@ -73,13 +73,14 @@
                 if (dragon.hp = dragon.hp - guerrera.ataque) {
                     guerrera.hp = guerrera.hp - 30;
                     console.log("el dragon " + dragon.nombre + "ataca");
-                    console.log("la guerrera" + guerrera.nombre + " ha recibido daños, ahora tiene" + guerrera.hp + "hp");
+                    console.log("la guerrera " + guerrera.nombre + " ha recibido daños, ahora tiene " + guerrera.hp + " hp");
+
                 }
                 
-                else {
+                else  {
                     cazadora.hp = cazadora.hp - 30;
-                    console.log("el dragon " + dragon.nombre + "ataca");
-                    console.log("la cazadora" + cazadora.nombre + " ha recibido daños, ahora tiene" + cazadora.hp + "hp");
+                    console.log("el dragon " + dragon.nombre + " ataca");
+                    console.log("la cazadora " + cazadora.nombre + " ha recibido daños, ahora tiene " + cazadora.hp + " hp");
 
                 }
 
