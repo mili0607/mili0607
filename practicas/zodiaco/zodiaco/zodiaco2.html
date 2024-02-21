@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>zodiaco</title>
+    <script>
+        function consultarH() {
+            var dia = selectordiaN.value;
+            var mes = selectormesnac.value;
+            console.log("consultando fecha" + dia + "/" + mes)
+        }
+    </script>
+</head>
+<body>
+    <label> dia de nacimiento </label>
+    <select id=" selectordiaN">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <!--incluir el resto de opciones-->
+    </select>
+    <label> Mes nacimiento </label>
+    <select id="selectormesnac">
+        <option value="1">enero</option>
+        <option value="2">febrero</option>
+        <!--incluir el resto de opciones-->
+    </select>
+    <button onclick="consultarH()">
+        consultar horoscopos
+    </button>
+</body>
+</html>
+  icono.src = "img/zodiaco/capri.jpeg";
+            nombreSigno.innerHTML = "capricornio";
+            descriSigno.innerHTML = "se caracteriza por ser prudente y práctico en todos los asuntos que le conciernen."
