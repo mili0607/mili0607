@@ -5,8 +5,9 @@
     <title>zodiaco</title>
     <script>
 
-        function consulHo() {
+        
 
+        function consulHo() {
             var dia = parseInt(selectordian.value);
             var mes = parseInt(selectormesn.value);
 
@@ -14,46 +15,279 @@
 
             console.log("consultando fecha" + dia + "/" + mes + "=" + valor)
 
+            var signo = parseInt(selectorsigno.value);
+            var valorsig = signo * 100;
+
+            console.log("signo" + "=" + valorsig)
+            
 
             // acuario
 
-             if (120 < valor < 218) {
+            if (valor >= 120 && valor <= 218) {
+                console.log("tu signo es acuario")
                 icono.src = "img/signo/acuario.jpg";
                 nombreSigno.innerHTML = "acuario";
                 descriSigno.innerHTML =
                     " Los Acuario son tímidos y callados, pero al mismo tiempo, pueden ser excéntricos y enérgicos."
                     + "Sin embargo, en ambos casos, son pensadores y muy intelectuales, y aman ayudar a otros. "
                     + "Son capaces de ver las dos caras de una situación sin prejuicios, lo cual les permite resolver problemas."
+               
 
-            }
+                if (valorsig == 100) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 90% " + "pareja exitosa capricornio x acuario, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 200) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 20% " + "pareja no exitosa acuario x acuario , ni le muevas  ";
+                }
+
+                if (valorsig == 300) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 70 % " + "pareja medianamente exitosa, picis x acuario, pues arriesgate nomas ten cuidado ";
+                }
+
+                if (valorsig == 400) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 60% " + "pareja medianamente exitosa aries x acuario, pues arriesgate nomas ten cuidado  ";
+                }
+
+                if (valorsig == 500) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 10 % " + "pareja no exitosa, tauro x acuario, ni le muevas ";
+                }
+
+                if (valorsig == 600) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 80% " + "pareja exitosa geminis x acuario, podria ser el amor de tu vida ";
+                }
+
+                if (valorsig == 700) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 50% " + "pareja medianamente exitosa cancer x acuari,  pues arriesgate nomas ten cuidado  ";
+                }
+
+                if (valorsig == 800) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 10% " + "pareja no exitosa leo x acuario, ni le muevas ";
+                }
+
+                if (valorsig == 900) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 100% " + "pareja exitosa virgo x acuario, puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 1000) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 90% " + "pareja exitosa libra x acuario, puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 1100) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 30% " + "pareja no exitosa escorpio x acuario, ni le muevas ";
+                }
+
+                if (valorsig == 1200) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 5% " + "pareja no exitosa sagitario x acuario, ni le muevas ";
+                }
+
+
+                    
+
+
+
+             }
 
 
             // pisis
-            else if (219 < valor < 320) {
+            else if (valor >= 219 && valor <= 320) {
+                console.log("tu signo es picis")
                 icono.src = "img/signo/picis.jpg";
                 nombreSigno.innerHTML = "picis";
                 descriSigno.innerHTML =
                      " Los Piscis son muy amistosos, así que siempre los encontrarás en compañía de gente diferente."
                     + "Los Piscis son abnegados, siempre tienen la disposición de ayudar a los demás, sin esperar recibir nada a cambio."
 
+                if (valorsig == 100) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 80% " + "pareja exitosa capricornio x picis, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 200) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 90% " + "pareja exitosa acuario x picis , puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 300) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 25 % " + "pareja no exitosa, picis x picis, ni le muevas ";
+                }
+
+                if (valorsig == 400) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 70% " + "pareja medianamente exitosa aries x picis, pues arriesgate nomas ten cuidado  ";
+                }
+
+                if (valorsig == 500) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 6 % " + "pareja no exitosa, tauro x picis, ni le muevas ";
+                }
+
+                if (valorsig == 600) {
+
+                    alert("no son compatibles ")
+                    compatible.innerHTML = " 35% " + "pareja no exitosa geminis x picis, ni le muevas  ";
+                }
+
+                if (valorsig == 700) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 50% " + "pareja medianamente exitosa cancer x picis,  pues arriesgate nomas ten cuidado  ";
+                }
+
+                if (valorsig == 800) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 10% " + "pareja no exitosa leo x picis, ni le muevas ";
+                }
+
+                if (valorsig == 900) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 60 % " + "pareja medianamente exitosa virgo x picis, pues arriesgate nomas ten cuidado ";
+                }
+
+                if (valorsig == 1000) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 100% " + "pareja exitosa libra x picis, puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 1100) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 38% " + "pareja no exitosa escorpio x picis, ni le muevas ";
+                }
+
+                if (valorsig == 1200) {
+
+                    alert("son compatibles ")
+                    compatible.innerHTML = " 100% " + "pareja exitosa sagitario x picis, puede ser el amor de tu vida ";
+                }
+
             }
 
             //aries
 
-            else if (321 < valor < 419) {
+            else if (valor >= 321 && valor <= 419) {
+                console.log("tu signo es aries")
                 icono.src = "img/signo/aries.jpg";
                 nombreSigno.innerHTML = "aries";
                 descriSigno.innerHTML =
                      " Siendo el primer signo del zodíaco, la presencia de Aries casi siempre marca el inicio de algo turbulento y enérgico."
                      + "Las personas de éste signo están buscando continuamente dinamismo, velocidad y competencia."
                      + "Son siempre los primeros en todo – desde el trabajo hasta en los eventos sociales.Gracias a Marte,"
-                     + " su planeta regente, Aries es uno de los signos más activos del zodiaco."
+                    + " su planeta regente, Aries es uno de los signos más activos del zodiaco."
 
+
+                if (valorsig == 100) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 15% " + "pareja no exitosa capricornio x aries, ni le muevas  ";
+                }
+
+                if (valorsig == 200) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 65% " + "pareja medianamente exitosa acuario x aries, pues arriesgate nomas ten cuidado  ";
+                }
+
+                if (valorsig == 300) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 20 % " + "pareja no exitosa, picis x aries, ni le muevas ";
+                }
+
+                if (valorsig == 400) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 88% " + "pareja exitosa aries x aries, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 500) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 80 % " + "pareja exitosa, tauro x aries,puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 600) {
+
+                    alert("son compatibles ")
+                    compatible.innerHTML = " 90% " + "pareja exitosa geminis x aries, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 700) {
+
+                    alert("no son compatibles ")
+                    compatible.innerHTML = " 43% " + "pareja no exitosa cancer x aries,  ni le muevas  ";
+                }
+
+                if (valorsig == 800) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 15% " + "pareja no exitosa leo x aries, ni le muevas ";
+                }
+
+                if (valorsig == 900) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 100 % " + "pareja medianamente exitosa virgo x aries, puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 1000) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 90% " + "pareja exitosa libra x aries,puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 1100) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 95% " + "pareja exitosa escorpio x aries,puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 1200) {
+
+                    alert("no son compatibles ")
+                    compatible.innerHTML = " 10% " + "pareja exitosa sagitario x aries, ni le muevas ";
+                }
+
+                
             }
 
             //tauro
 
-            else if (420 < valor < 520) {
+            else if (valor >= 420 && valor <= 520) {
+                console.log("tu signo es tauro")
                 icono.src = "img/signo/tauro.jpg";
                 nombreSigno.innerHTML = "tauro";
                 descriSigno.innerHTML =
@@ -62,59 +296,427 @@
                      + "nacidas bajo el signo de Tauro son muy sensuales y tienen un tacto mu agudo."
                     + "El tacto es extremadamente importante para ellos, tanto en negocios como en el romance."
 
+                if (valorsig == 100) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 15% " + "pareja no exitosa capricornio x aries, ni le muevas  ";
+                }
+
+                if (valorsig == 200) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 100% " + "pareja exitosa acuario x tauro, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 300) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 20 % " + "pareja no exitosa, picis x tauro, ni le muevas ";
+                }
+
+                if (valorsig == 400) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 88% " + "pareja exitosa aries x tauro, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 500) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 40 % " + "pareja no exitosa, tauro x tauro,ni le muevas";
+                }
+
+                if (valorsig == 600) {
+
+                    alert("son compatibles ")
+                    compatible.innerHTML = " 100% " + "pareja exitosa geminis x tauro, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 700) {
+
+                    alert("no son compatibles ")
+                    compatible.innerHTML = " 25% " + "pareja no exitosa cancer x tauro,  ni le muevas  ";
+                }
+
+                if (valorsig == 800) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 95% " + "pareja no exitosa leo x tauro, puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 900) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 85 % " + "pareja medianamente exitosa virgo x tauro, puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 1000) {
+
+                    alert("no son compatibles ")
+                    compatible.innerHTML = " 9% " + "pareja no exitosa libra x tauro,ni le muevas";
+                }
+
+                if (valorsig == 1100) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 100% " + "pareja exitosa escorpio x tauro,puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 1200) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 70 % " + "pareja medianamente exitosa sagitario x tauro,pues arriesgate nomas ten cuidado ";
+                }
+
+
             }
 
 
             //geminis
 
-            else if (521 < valor < 620) {
+            else if (valor >= 521 && valor < 620) {
+                console.log("tu signo es geminis")
                 icono.src = "img/signo/geminis.jpg";
                 nombreSigno.innerHTML = "geminis";
                 descriSigno.innerHTML =
                      " Expresivos y de pensamiento rápido, Géminis representa dos lados diferentes de personalidad"
                      + "y nunca estrás seguro con cuál de las dos te estás viendo.Géminis puede ser sociable, comunica"
                      + "tivo y listo para la diversión, mientras que por otro lado, puede ser muy serio, pensativo, "
-                     + "inquieto e indeciso.Como un signo de aire, a Géminis le preocupan todos los aspectos de la mente."
+                    + "inquieto e indeciso.Como un signo de aire, a Géminis le preocupan todos los aspectos de la mente."
+
+                if (valorsig == 100) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 80% " + "pareja exitosa capricornio x geminis, puede ser el amor de tu vida   ";
+                }
+
+                if (valorsig == 200) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 86% " + "pareja exitosa acuario x geminis, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 300) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 7 % " + "pareja no exitosa, picis x geminis, ni le muevas ";
+                }
+
+                if (valorsig == 400) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 10% " + "pareja no exitosa aries x geminis, ni le muevas  ";
+                }
+
+                if (valorsig == 500) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 40 % " + "pareja no exitosa, tauro x geminis,ni le muevas";
+                }
+
+                if (valorsig == 600) {
+
+                    alert("son compatibles ")
+                    compatible.innerHTML = " 100% " + "pareja exitosa geminis x geminis, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 700) {
+
+                    alert("no son compatibles ")
+                    compatible.innerHTML = " 25% " + "pareja no exitosa cancer x geminis,  ni le muevas  ";
+                }
+
+                if (valorsig == 800) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 100% " + "pareja no exitosa leo x geminis, puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 900) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 47 % " + "pareja no medianamente exitosa virgo x geminis, ni le muevas ";
+                }
+
+                if (valorsig == 1000) {
+
+                    alert("no son compatibles ")
+                    compatible.innerHTML = " 30% " + "pareja no exitosa libra x geminis,ni le muevas";
+                }
+
+                if (valorsig == 1100) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 87% " + "pareja exitosa escorpio x geminis,puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 1200) {
+
+                    alert("no  son compatibles ")
+                    compatible.innerHTML = " 13 % " + "pareja no exitosa sagitario x geminis ,ni le muevas ";
+                }
+
 
             }
 
                 // cancer
 
-            else if (621 < valor < 722) {
+            else if (valor >= 621 && valor <= 722) {
+                console.log("tu signo es cancer")
                 icono.src = "img/signo/cancer.jpg";
                 nombreSigno.innerHTML = "cancer";
                 descriSigno.innerHTML =
-                    " Los Acuario son tímidos y callados, pero al mismo tiempo, pueden ser excéntricos y enérgicos."
-                    + "Sin embargo, en ambos casos, son pensadores y muy intelectuales, y aman ayudar a otros. "
-                    + "Son capaces de ver las dos caras de una situación sin prejuicios, lo cual les permite resolver problemas."
+                    " Profundamente intuitivo y sentimental, Cáncer puede ser uno de los signos del zodiaco más difíciles de llegar a conocer. "
+                     + "Cáncer es muy emocional y sensible, se preocupa por su hogar y su familia,"
+                     + "Cáncer es simpático y suele ser muy apegado a la gente que lo rodea."
+                    + " Las personas nacidas bajo el signo de Cáncer son leales y empáticas, capaces de empanizar con tu sufrimiento y dolor."
 
+                if (valorsig == 100) {
+
+                    alert("son compatibles ")
+                    compatible.innerHTML = " 100% " + "pareja exitosa capricornio x cancer, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 200) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 20% " + "pareja no exitosa acuario x cancer , ni le muevas  ";
+                }
+
+                if (valorsig == 300) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 20 % " + "pareja no exitosa, picis x cancer, ni le muevas  ";
+                }
+
+                if (valorsig == 400) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 10% " + "pareja no exitosa aries x cancer, ni le muevas  ";
+                }
+
+                if (valorsig == 500) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 40 % " + "pareja medianamente exitosa, tauro x cancer,pues arriesgate nomas ten cuidado ";
+                }
+
+                if (valorsig == 600) {
+
+                    alert("son compatibles ")
+                    compatible.innerHTML = " 80% " + "pareja exitosa geminis x cancer, puede ser el amor de tu vida  ";
+                }
+
+
+                if (valorsig == 700) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 50% " + "pareja medianamente exitosa cancer x cancer,  pues arriesgate nomas ten cuidado  ";
+                }
+
+                if (valorsig == 800) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 90% " + "pareja exitosa leo x cancer, puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 900) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 34 % " + "pareja no medianamente exitosa virgo x cancer, ni le muevas ";
+                }
+
+                if (valorsig == 1000) {
+
+                    alert("no son compatibles ")
+                    compatible.innerHTML = " 15% " + "pareja no exitosa libra x cancer,ni le muevas";
+                }
+
+                if (valorsig == 1100) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 87% " + "pareja exitosa escorpio x cancer,puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 1200) {
+
+                    alert("no  son compatibles ")
+                    compatible.innerHTML = " 5 % " + "pareja no exitosa sagitario x cancer ,ni le muevas ";
+                }
             }
 
             //leo
 
-            else if (723 < valor < 822) {
+            else if (valor >= 723 && valor <= 822) {
+                console.log("tu signo es leo")
                 icono.src = "img/signo/leo.jpg";
                 nombreSigno.innerHTML = "leo";
                 descriSigno.innerHTML =
-                    " Los Acuario son tímidos y callados, pero al mismo tiempo, pueden ser excéntricos y enérgicos."
-                    + "Sin embargo, en ambos casos, son pensadores y muy intelectuales, y aman ayudar a otros. "
-                    + "Son capaces de ver las dos caras de una situación sin prejuicios, lo cual les permite resolver problemas."
+                     " Las personas nacidas bajo el signo de Leo, son líderes por naturaleza."
+                     + "Son dramáticos, creativos, seguros de sí mismos, dominantes y es extremadamente difícil resistirse a ellos."
+                     + "Pueden lograr todo lo que se propongan, trátese de familia y amigos o trabajo."
+                     + "Leo es un signo de fuego, lo que significa que ama la vida y espera pasarla bien."
+                     + "Al igual que a los otros signos de fuego, Sagitario y Aries,"
+                     + "a Leo le gusta usar su mente para resolver los problemas más difíciles y tomar la iniciativa resolviendo situaciones complejas variadas."
+
+                if (valorsig == 100) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 68% " + "pareja medianemente exitosa capricornio x leo, pues arriesgate nomas ten cuidado  ";
+                }
+
+                if (valorsig == 200) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 88% " + "pareja exitosa acuario x leo, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 300) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 14 % " + "pareja no exitosa, picis x leo, ni le muevas ";
+                }
+                if (valorsig == 400) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 10% " + "pareja no exitosa aries x leo, ni le muevas  ";
+                }
+
+                if (valorsig == 500) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 40 % " + "pareja medianamente exitosa, tauro x leo,pues arriesgate nomas ten cuidado ";
+                }
+
+                if (valorsig == 600) {
+
+                    alert("son compatibles ")
+                    compatible.innerHTML = " 80% " + "pareja exitosa geminis x leo, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 700) {
+
+                    alert("no son compatibles ")
+                    compatible.innerHTML = " 43% " + "pareja no exitosa cancer x leo,  ni le muevas  ";
+                }
+
+                if (valorsig == 800) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 19% " + "pareja no exitosa leo x leo, ni le muevas ";
+                }
+
+                if (valorsig == 900) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 100 % " + "pareja medianamente exitosa virgo x leo, puede ser el amor de tu vida ";
+                }
+                if (valorsig == 1000) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 100% " + "pareja exitosa libra x leo, puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 1100) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 21% " + "pareja no exitosa escorpio x leo, ni le muevas ";
+                }
+
+                if (valorsig == 1200) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 44% " + "pareja no exitosa sagitario x leo, ni le muevas ";
+                }
 
             }
 
             //virgo
-            else if (823 < valor < 922) {
+            else if (valor >= 823 && valor <= 922) {
+                console.log("tu signo es virgo")
                 icono.src = "img/signo/virgo.jpg";
                 nombreSigno.innerHTML = "virgo";
                 descriSigno.innerHTML =
-                    " Los Acuario son tímidos y callados, pero al mismo tiempo, pueden ser excéntricos y enérgicos."
-                    + "Sin embargo, en ambos casos, son pensadores y muy intelectuales, y aman ayudar a otros. "
-                    + "Son capaces de ver las dos caras de una situación sin prejuicios, lo cual les permite resolver problemas."
+                     " Los Virgos suelen poner atención en los detalles más insignificantes y su profundo sentido de la humanidad"
+                     + "los hace ser una de los signos más cuidadosos del zodiaco."
+                     + "Su aproximación metódica a la vida les asegura que nada será dejado al azar."
+                    + "Los Virgo suelen ser tiernos pero a su vez son sumamente cuidadosos."
 
+                if (valorsig == 100) {
+
+                    alert("son compatibles ")
+                    compatible.innerHTML = " 90% " + "pareja exitosa capricornio x virgo, puede ser el amor de tu vida   ";
+                }
+
+                if (valorsig == 200) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 80% " + "pareja exitosa acuario x virgo, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 300) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 7 % " + "pareja no exitosa, picis x virgo, ni le muevas ";
+                }
+
+                if (valorsig == 400) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 15% " + "pareja no exitosa aries x virgo, ni le muevas  ";
+                }
+
+                if (valorsig == 500) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 40 % " + "pareja no exitosa, tauro x virgo,ni le muevas";
+                }
+
+                if (valorsig == 600) {
+
+                    alert("son compatibles ")
+                    compatible.innerHTML = " 100% " + "pareja exitosa geminis x virgo, puede ser el amor de tu vida  ";
+                }
+                if (valorsig == 700) {
+
+                    alert("no son compatibles ")
+                    compatible.innerHTML = " 25% " + "pareja no exitosa cancer x virgo,  ni le muevas  ";
+                }
+
+                if (valorsig == 800) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 95% " + "pareja no exitosa leo x virgo, puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 900) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 85 % " + "pareja medianamente exitosa virgo x virgo, puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 1000) {
+
+                    alert("no son compatibles ")
+                    compatible.innerHTML = " 10% " + "pareja no exitosa libra x virgo,ni le muevas";
+                }
+
+                if (valorsig == 1100) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 90% " + "pareja exitosa escorpio x virgo,puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 1200) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 75 % " + "pareja medianamente exitosa sagitario x virgo,pues arriesgate nomas ten cuidado ";
+                }
             }
 
             //libra
-            else if (923 < valor < 1022) {
+            else if (valor >= 923 && valor <= 1022) {
+                console.log("tu signo es libra")
                 icono.src = "img/signo/libra.jpg";
                 nombreSigno.innerHTML = "libra";
                 descriSigno.innerHTML =
@@ -124,25 +726,174 @@
                     + "Valoran el esfuerzo de los demás y les gusta trabajar en equipo."
                     + "El lado negativo de Libra es que de lo curiosos que son a veces se entrometen en la vida de los demás."
                     + " Están en contra de la rutina, y una vez que tengan una opinión de algo no les gusta que se les contradiga."
+                if (valorsig == 100) {
 
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 90% " + "pareja exitosa capricornio x libra, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 200) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 20% " + "pareja no exitosa acuario x libra , ni le muevas  ";
+                }
+
+                if (valorsig == 300) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 70 % " + "pareja medianamente exitosa, picis x libra, pues arriesgate nomas ten cuidado ";
+                }
+
+                if (valorsig == 400) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 60% " + "pareja medianamente exitosa aries x libra, pues arriesgate nomas ten cuidado  ";
+                }
+
+                if (valorsig == 500) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 10 % " + "pareja no exitosa, tauro x libra, ni le muevas ";
+                }
+
+                if (valorsig == 600) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 80% " + "pareja exitosa geminis x libra, podria ser el amor de tu vida ";
+                }
+
+                if (valorsig == 700) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 50% " + "pareja medianamente exitosa cancer x libra,  pues arriesgate nomas ten cuidado  ";
+                }
+
+                if (valorsig == 800) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 10% " + "pareja no exitosa leo x libra, ni le muevas ";
+                }
+
+                if (valorsig == 900) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 100% " + "pareja exitosa virgo x libra, puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 1000) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 90% " + "pareja exitosa libra x libra, puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 1100) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 30% " + "pareja no exitosa escorpio x libra, ni le muevas ";
+                }
+
+                if (valorsig == 1200) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 5% " + "pareja no exitosa sagitario x libra, ni le muevas ";
+                }
             }
             
 
             //escorpio
 
-            else if (1023 < valor < 1121) {
+            else if (valor >= 1023 && valor <= 1121) {
+                console.log("tu signo es escorpio")
                 icono.src = "img/signo/escorpio.jpg";
                 nombreSigno.innerHTML = "acuario";
                 descriSigno.innerHTML =
-                    " Los Acuario son tímidos y callados, pero al mismo tiempo, pueden ser excéntricos y enérgicos."
-                    + "Sin embargo, en ambos casos, son pensadores y muy intelectuales, y aman ayudar a otros. "
-                    + "Son capaces de ver las dos caras de una situación sin prejuicios, lo cual les permite resolver problemas."
+                     " Los nacidos bajo el signo de Escorpio son personas apasionadas y asertivas."
+                     + "Son determinados y decisivos, e investigarán hasta encontrar la verdad."
+                     + "Escorpio es un gran líder, siempre al tanto de la situación y con un prominente ingenio."
+                     + "Escorpio es un signo de Agua, y vive para experimentar y expresar sus emociones,"
+                     + "A pesar de que las emociones son sumamente importantes para Escorpio,"
+                     + "las manifiestan de manera distinta en comparación con el resto de los signos de Agua."
+                     + "En cualquier caso, puedes estar seguro de que Escorpio guardará tus secretos, cualesquiera que sean."
 
+
+                if (valorsig == 100) {
+
+                    alert("son compatibles ")
+                    compatible.innerHTML = " 100% " + "pareja exitosa capricornio x escorpio, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 200) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 20% " + "pareja no exitosa acuario x escorpio , ni le muevas  ";
+                }
+
+                if (valorsig == 300) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 20 % " + "pareja no exitosa, picis x escorpio, ni le muevas  ";
+                }
+
+                if (valorsig == 400) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 10% " + "pareja no exitosa aries x escorpio, ni le muevas  ";
+                }
+
+                if (valorsig == 500) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 40 % " + "pareja medianamente exitosa, tauro x escorpio,pues arriesgate nomas ten cuidado ";
+                }
+
+                if (valorsig == 600) {
+
+                    alert("son compatibles ")
+                    compatible.innerHTML = " 80% " + "pareja exitosa geminis x escorpio, puede ser el amor de tu vida  ";
+                }
+
+
+                if (valorsig == 700) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 50% " + "pareja medianamente exitosa cancer x escorpio,  pues arriesgate nomas ten cuidado  ";
+                }
+
+                if (valorsig == 800) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 90% " + "pareja exitosa leo x escorpio, puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 900) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = "  15% " + "pareja no medianamente exitosa virgo x escorpio, ni le muevas ";
+                }
+
+                if (valorsig == 1000) {
+
+                    alert("no son compatibles ")
+                    compatible.innerHTML = " 8% " + "pareja no exitosa libra x escorpio,ni le muevas";
+                }
+
+                if (valorsig == 1100) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 67% " + "pareja exitosa escorpio x escorpio,puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 1200) {
+
+                    alert("no  son compatibles ")
+                    compatible.innerHTML = " 10 % " + "pareja no exitosa sagitario x escorpio ,ni le muevas ";
+                }
             }
 
             //sagitario
 
-            else if (1122 < valor < 1221) {
+            else if (valor >= 1122 && valor <= 1221) {
+                console.log("tu signo es sagitario")
                 icono.src = "img/signo/sagitario.jpg";
                 nombreSigno.innerHTML = "sagitario";
                 descriSigno.innerHTML =
@@ -151,21 +902,204 @@
                      + "sentido de la vidaSagitario es extrovertido, optimista y entusiasta, y le gustan cambios."
                      + " Los nacidos Sagitario son capaces de transformar sus ideas en acciones concretas y harán cualquier cosa para lograr sus objetivos"
 
+                if (valorsig == 100) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 15% " + "pareja no exitosa capricornio x sagitario, ni le muevas  ";
+                }
+
+                if (valorsig == 200) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 65% " + "pareja medianamente exitosa acuario x sagitario, pues arriesgate nomas ten cuidado  ";
+                }
+
+                if (valorsig == 300) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 20 % " + "pareja no exitosa, picis x sagitario, ni le muevas ";
+                }
+
+                if (valorsig == 400) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 88% " + "pareja exitosa aries x sagitario, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 500) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 80 % " + "pareja exitosa, tauro x sagitario,puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 600) {
+
+                    alert("son compatibles ")
+                    compatible.innerHTML = " 90% " + "pareja exitosa geminis x sagitario, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 700) {
+
+                    alert("no son compatibles ")
+                    compatible.innerHTML = " 43% " + "pareja no exitosa cancer x sagitario,  ni le muevas  ";
+                }
+
+                if (valorsig == 800) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 15% " + "pareja no exitosa leo x sagitario, ni le muevas ";
+                }
+
+                if (valorsig == 900) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 100 % " + "pareja medianamente exitosa virgo x sagitario, puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 1000) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 90% " + "pareja exitosa libra x sagitario,puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 1100) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 95% " + "pareja exitosa escorpio x sagitario,puede ser el amor de tu vida ";
+                }
+
+                if (valorsig == 1200) {
+
+                    alert("no son compatibles ")
+                    compatible.innerHTML = " 10% " + "pareja exitosa sagitario x sagitario, ni le muevas ";
+                }
             }
 
 
-            // capri
-           
+                 // capri
+
+            else if (valor <= 119 && valor <= 1222) {
+                console.log("tu signo es capricornio")
+                 icono.src = "img/signo/capri.jpg";
+                 nombreSigno.innerHTML = "capricornio";
+                 descriSigno.innerHTML =
+                     " Cuando se trata de profesionalismo y de valores tradicionales, Capricornio es el primero."
+                     + "Capricornio es práctico y se considera que es el signo más serio del zodíaco,"
+                     + "posee una independencia que le permite tener avances significativos tanto en el plano personal como en los negocios."
+
+                if (valorsig == 100) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 90% " + "pareja exitosa capricornio x acuario, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 200) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 90% " + "pareja exitosa capricornio x acuario, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 300) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 80% " + "pareja exitosa capricornio x picis, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 400) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 15% " + "pareja no exitosa capricornio x aries, ni le muevas  ";
+                }
+
+                if (valorsig == 500) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 15% " + "pareja no exitosa capricornio x aries, ni le muevas  ";
+                }
+
+                if (valorsig == 600) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 80% " + "pareja exitosa capricornio x geminis, puede ser el amor de tu vida   ";
+                }
+
+                if (valorsig == 700) {
+
+                    alert("son compatibles ")
+                    compatible.innerHTML = " 100% " + "pareja exitosa capricornio x cancer, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 800) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 68% " + "pareja medianemente exitosa capricornio x leo, pues arriesgate nomas ten cuidado  ";
+                }
+
+                if (valorsig == 900) {
+
+                    alert("son compatibles ")
+                    compatible.innerHTML = " 90% " + "pareja exitosa capricornio x virgo, puede ser el amor de tu vida   ";
+                }
+
+                if (valorsig == 1000) {
+
+                    alert(" son compatibles ")
+                    compatible.innerHTML = " 90% " + "pareja exitosa capricornio x libra, puede ser el amor de tu vida  ";
+                }
+
+
+                if (valorsig == 1100) {
+
+                    alert("son compatibles ")
+                    compatible.innerHTML = " 100% " + "pareja exitosa capricornio x escorpio, puede ser el amor de tu vida  ";
+                }
+
+                if (valorsig == 1200) {
+
+                    alert(" no son compatibles ")
+                    compatible.innerHTML = " 15% " + "pareja no exitosa capricornio x sagitario, ni le muevas  ";
+                }
+
+                else if (valor == 0 && valorsig ==0 ) {
+                    alert("selecciona mes y dia")
+                    icono.src = "img/signo/horoscopo.jpg";
+                    nombreSigno.innerHTML = "un error selecciona mes y año para continuar"; 
+                   
+
+                }
+            }
+             
     
 
         }
+
+      
+
+
+       
         
     </script>
+    <style>
+        #icono {
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            background-image: url("img/signo/horoscopo.jpg");
+            left: 450px;
+            right: 250px;
+            top: 20px;
+        }
+
+        
+       
+
+    </style>
 </head>
 <body>
-    <h1> El horoscopo </h1>
+    <h1>    El horoscopo </h1>
     <label> dia de nacimiento </label>
     <select id="selectordian">
+        <option value="0">dia de nacimiento</option>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -202,8 +1136,12 @@
 
 
     </select>
+    <h1>
+    </h1>
+
     <label> Mes nacimiento </label>
     <select id="selectormesn">
+        <option value="0">mes de nacimiento</option>
         <option value="1">enero</option>
         <option value="2">febrero</option>
         <option value="3">marzo</option>
@@ -218,18 +1156,54 @@
         <option value="12">diciembre</option>
 
 
+
+    </select>
+    <h1>
+    </h1>
+
+    <label> signo </label>
+    <select id="selectorsigno">
+        <option value="0">selecciona tu signo</option>
+        <option value="1">capricornio</option>
+        <option value="2">acuario</option>
+        <option value="3">picis</option>
+        <option value="4">aries </option>
+        <option value="5">tauro</option>
+        <option value="6">geminis</option>
+        <option value="7">cancer</option>
+        <option value="8">leo</option>
+        <option value="9">virgo</option>
+        <option value="10">libra</option>
+        <option value="11">escorpio</option>
+        <option value="12">sagitario</option>
+
+
         <!--incluir el resto de opciones-->
     </select>
-
+    <h1>
+    </h1>
 
     <button onclick="consulHo()">
         consultar horoscopos
     </button>
 
+    <h1>
+    </h1>
 
-    <img id="icono" src="img/signo/horoscopo.jpg"/>
+    <button onclick="consulHo()">
+        compativilidad
+    </button>
+
+    <h1>
+    </h1>
     <h2 id="nombreSigno"></h2>
+
+    <img id="icono" src="img/signo/horoscopo.jpg" />
+    
+
+    
     <p id="descriSigno"></p>
+    <h2 id="compatible"></h2>
 
 </body>
 </html>

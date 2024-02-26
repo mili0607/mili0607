@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>pelea DnD</title>
+    <script>
+        var dragon = {
+            nombre: "alastor",
+            hp: 100,
+            ataque: 30,
+            defensa: 99,
+            exp: 80,
+
+        }
+        var cazadora = {
+            nombre: "milly",
+            hp: 100,
+            ataque: 25,
+            defensa: 100,
+            exp: 45,
+
+        }
+
+        var guerrera = {
+            nombre: "lilit",
+            hp: 100,
+            ataque: 15,
+            defensa: 100,
+            exp: 35,
+
+        }
+        // aqui va js
+
+        function casadoraAtaca() {
+            console.log("casadora lanza ataque");
+            dragon.hp = dragon.hp - 25;
+            console.log(dragon.nombre + " tiene " + dragon.hp + " hp");
+
+            if (dragon.hp < 0) {
+                cazadora.exp = cazadora.exp + 40;
+                console.log("la casadora  " + cazadora.nombre + " a recibido 40 puntos de experiencia, ahora tiene " + cazadora.exp);
+            }
+
+            if (dragon.hp > 0) {
+                console.log(dragon.nombre + "el dragon ha recibido daños")
+
+
+            }
+            else {
+                console.log(dragon.nombre + " el dragon ha sigo derrotado ");
+                alert(dragon.nombre + " el dragon ha sigo derrotado ");
+            }
+            
+        }
+
+
+        function guerreraAtaca() {
+            console.log("guerrera lanza ataque");
+            dragon.hp = dragon.hp - 15;
+            console.log(dragon.nombre + " tiene " + dragon.hp + " hp");
+
+
+            if (dragon.hp > 0) {
+                console.log(dragon.nombre + " el dragon ha recibido daños")
+
+
+            }
+            else {
+                console.log(dragon.nombre + " el dragon ha sigo derrotado ");
+                alert(dragon.nombre + " el dragon ha sigo derrotado ");
+            }
+
+            if (dragon.hp < 0) {
+                guerrera.exp = guerrera.exp + 40;
+                console.log("la gerrera  " + guerrera.nombre + " a recibido 40 puntos de experiencia, ahora tiene " + guerrera.exp);
+
+               
+
+            }
+
+            
+        }
+
+
+        function dragonataca() {
+
+
+            if (guerreraAtaca) {
+                guerrera.hp = guerrera.hp - 30;
+                console.log("el dragon " + dragon.nombre + "ataca");
+                console.log("la guerrera " + guerrera.nombre + " ha recibido daños, ahora tiene " + guerrera.hp + " hp");
+
+
+                if (guerrera.hp > 0) {
+                    console.log(guerrera.nombre + " la guerrera ha sido herida ha recibido daños")
+
+                }
+                else {
+                    dragon.exp = dragon.exp + guerrera.exp;
+                    console.log(guerrera.nombre + " la guerrera ha sido herida ha sido derrotada ahora " + dragon.nombre + " tiene " + dragon.exp + " de experiencia")
+                }
+            }
+
+            if (casadoraAtaca) { 
+                cazadora.hp = cazadora.hp - 30;
+                console.log("el dragon " + dragon.nombre + " ataca");
+                console.log("la cazadora " + cazadora.nombre + " ha recibido daños, ahora tiene " + cazadora.hp + " hp");
+
+                if (cazadora.hp > 0) {
+                    console.log(cazadora.nombre + " la guerrera ha sido herida ha recibido daños")
+
+                }
+                else {
+                    dragon.exp = dragon.exp + cazadora.exp;
+                    console.log(cazadora.nombre + " la cazadora ha sido herida ha sido derrotada ahora " + dragon.nombre + " tiene " + dragon.exp + " de experiencia")
+                }
+            }
+            
+
+                
+
+
+            
+           
+
+          
+            
+                
+        }
+        
+
+    </script>
+    <style>
+        /*aqui va css*/
+        #calabozo {
+            position: relative;
+            width: 900px;
+            height: 600px;
+            background-image: url("img/calabozo_personajes/fondo.jpg");
+            background-size: cover;
+        }
+
+
+        .personaje {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        #casadora {
+            left: 300px;
+            top: 200px;
+
+        }
+
+        #guerrera {
+            right: 250px;
+            top: 200px;
+        }
+
+        #dragon {
+            left: 450px;
+            top: 400px;
+            transform: rotate(180deg);
+        }
+        
+
+
+    </style>
+</head>
+
+<body>
+    <div id="calabozo">
+        <img id="casadora" class="personaje" src="img/calabozo_personajes/8aGTvk9.png" onclick="casadoraAtaca()" />
+        <img id="guerrera" class="personaje" src="img/calabozo_personajes/A0VBHlW.png" onclick="guerreraAtaca()" />
+        <img id="dragon" class="personaje" src="img/calabozo_personajes/GMGFDFS.png" onclick="dragonataca()" />
+
+    </div>
+
+</body>
+</html>
