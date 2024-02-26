@@ -159,9 +159,13 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="img\signo\acuario.jpg" />
+    <Content Include="img\signo\aries.jpg" />
+    <Content Include="img\signo\cancer.jpg" />
+    <Content Include="img\signo\capri.jpg" />
     <Content Include="img\signo\escorpio.jpg" />
     <Content Include="img\signo\geminis.jpg" />
     <Content Include="img\signo\horoscopo.jpg" />
+    <Content Include="img\signo\leo.jpg" />
     <Content Include="img\signo\libra.jpg" />
     <Content Include="img\signo\picis.jpg" />
     <Content Include="img\signo\sagitario.jpg" />
@@ -174,9 +178,6 @@
     <Content Include="Account\Web.config" />
     <Content Include="zodiaco.html" />
     <Content Include="zodiaco2.html" />
-    <Content Include="img\signo\cancer.webp" />
-    <Content Include="img\signo\capri.webp" />
-    <Content Include="img\signo\leo.webp" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
