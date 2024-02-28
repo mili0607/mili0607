@@ -51,14 +51,26 @@
         }
         */
 
-        console.log(" calculo de area ");
-        for (var tablados = 0; tablados < 10; tablados++) {
-            var tablados = tablados * 2;
-            console.log("el area de radio " + radio + " es " + area);
+       
 
+        //while
+        console.log(" calculo de area de un circulo ");
+
+        var radio1 = 0;
+        while (radio1 < 5) {
+            var area = Math.PI * radio1 * radio1;
+            console.log("el area de radio " + radio1 + " es " + area);
+            radio1++;
         }
 
-        //tablas de multiplicar
+
+        var radio2 = 0;
+
+        do {
+            var area = Math.PI * radio2 * radio2;
+            console.log("el area de radio " + radio2 + " es " + area);
+            radio2++;
+        } while (radio2 < 5)
 
     </script>
 </head>
