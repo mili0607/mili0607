@@ -32,13 +32,16 @@
         // aqui va js
 
         function casadoraAtaca() {
+
             console.log("casadora lanza ataque");
             dragon.hp = dragon.hp - 25;
             console.log(dragon.nombre + " tiene " + dragon.hp + " hp");
 
             if (dragon.hp < 0) {
-                cazadora.exp = cazadora.exp + 40;
-                console.log("la casadora  " + cazadora.nombre + " a recibido 40 puntos de experiencia, ahora tiene " + cazadora.exp);
+                cazadora.exp = cazadora.exp + cazadora.hp * 3;
+                console.log("la casadora  " + cazadora.nombre + " a recibido puntos de experiencia, ahora tiene " + cazadora.exp);
+                guerrera.exp = guerrera.exp + guerrera.hp * 3;
+                console.log("la gerrera  " + guerrera.nombre + " a recibido puntos de experiencia, ahora tiene " + guerrera.exp);
             }
 
             if (dragon.hp > 0) {
@@ -49,6 +52,20 @@
             else {
                 console.log(dragon.nombre + " el dragon ha sigo derrotado ");
                 alert(dragon.nombre + " el dragon ha sigo derrotado ");
+            }
+            // dragon ataca
+
+            cazadora.hp = cazadora.hp - 30;
+            console.log("el dragon " + dragon.nombre + " ataca");
+            console.log("la cazadora " + cazadora.nombre + " ha recibido daños, ahora tiene " + cazadora.hp + " hp");
+
+            if (cazadora.hp > 0) {
+                console.log(cazadora.nombre + " la cazadora ha sido herida ha recibido daños")
+
+            }
+            else {
+                dragon.exp = dragon.exp + cazadora.exp;
+                console.log(cazadora.nombre + " la cazadora ha sido derrotada ahora " + dragon.nombre + " tiene " + dragon.exp + " de experiencia")
             }
             
         }
@@ -71,11 +88,27 @@
             }
 
             if (dragon.hp < 0) {
-                guerrera.exp = guerrera.exp + 40;
-                console.log("la gerrera  " + guerrera.nombre + " a recibido 40 puntos de experiencia, ahora tiene " + guerrera.exp);
+                guerrera.exp = guerrera.exp + guerrera.hp * 3;
+                console.log("la gerrera  " + guerrera.nombre + " a recibido puntos de experiencia, ahora tiene " + guerrera.exp);
+                cazadora.exp = cazadora.exp + cazadora.hp * 3;
+                console.log("la casadora  " + cazadora.nombre + " a recibido puntos de experiencia, ahora tiene " + cazadora.exp);
 
                
 
+            }
+
+            // dragon ataca 
+            guerrera.hp = guerrera.hp - 30;
+            console.log("el dragon " + dragon.nombre + "ataca");
+            console.log("la guerrera " + guerrera.nombre + " ha recibido daños, ahora tiene " + guerrera.hp + " hp");
+
+            if (guerrera.hp > 0) {
+                console.log(guerrera.nombre + " la guerrera ha sido herida ha recibido daños")
+
+            }
+            else {
+                dragon.exp = dragon.exp + guerrera.exp;
+                console.log(guerrera.nombre + " la guerrera ha sido herida ha sido derrotada ahora " + dragon.nombre + " tiene " + dragon.exp + " de experiencia")
             }
 
             
@@ -85,46 +118,6 @@
         function dragonataca() {
 
 
-            if (guerreraAtaca) {
-                guerrera.hp = guerrera.hp - 30;
-                console.log("el dragon " + dragon.nombre + "ataca");
-                console.log("la guerrera " + guerrera.nombre + " ha recibido daños, ahora tiene " + guerrera.hp + " hp");
-
-
-                if (guerrera.hp > 0) {
-                    console.log(guerrera.nombre + " la guerrera ha sido herida ha recibido daños")
-
-                }
-                else {
-                    dragon.exp = dragon.exp + guerrera.exp;
-                    console.log(guerrera.nombre + " la guerrera ha sido herida ha sido derrotada ahora " + dragon.nombre + " tiene " + dragon.exp + " de experiencia")
-                }
-            }
-
-            if (casadoraAtaca) { 
-                cazadora.hp = cazadora.hp - 30;
-                console.log("el dragon " + dragon.nombre + " ataca");
-                console.log("la cazadora " + cazadora.nombre + " ha recibido daños, ahora tiene " + cazadora.hp + " hp");
-
-                if (cazadora.hp > 0) {
-                    console.log(cazadora.nombre + " la guerrera ha sido herida ha recibido daños")
-
-                }
-                else {
-                    dragon.exp = dragon.exp + cazadora.exp;
-                    console.log(cazadora.nombre + " la cazadora ha sido herida ha sido derrotada ahora " + dragon.nombre + " tiene " + dragon.exp + " de experiencia")
-                }
-            }
-            
-
-                
-
-
-            
-           
-
-          
-            
                 
         }
         
@@ -136,7 +129,7 @@
             position: relative;
             width: 900px;
             height: 600px;
-            background-image: url("img/calabozo_personajes/fondo.jpg");
+            background-image: url("img/calabozo_pesonaje/fondo.jpg");
             background-size: cover;
         }
 
@@ -171,9 +164,9 @@
 
 <body>
     <div id="calabozo">
-        <img id="casadora" class="personaje" src="img/calabozo_personajes/8aGTvk9.png" onclick="casadoraAtaca()" />
-        <img id="guerrera" class="personaje" src="img/calabozo_personajes/A0VBHlW.png" onclick="guerreraAtaca()" />
-        <img id="dragon" class="personaje" src="img/calabozo_personajes/GMGFDFS.png" onclick="dragonataca()" />
+        <img id="casadora" class="personaje" src="img/calabozo_pesonaje/8aGTvk9.png" onclick="casadoraAtaca()" />
+        <img id="guerrera" class="personaje" src="img/calabozo_pesonaje/A0VBHlW.png" onclick="guerreraAtaca()" />
+        <img id="dragon" class="personaje" src="img/calabozo_pesonaje/GMGFDFS.png" onclick="dragonataca()" />
 
     </div>
 

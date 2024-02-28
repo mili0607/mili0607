@@ -19,13 +19,30 @@
 
         console.log(" imc");
 
-        for (var peso = 56; peso <= 200; peso++) {
+        for (var peso = 10; peso <= 200; peso++) {
+
+            var altura = 1.65
  
-            var imc = peso / 2.7225
+            var imc = peso / (altura * altura);
 
-            console.log("el imc de una altura de 1.65m  de con un peso de "+ peso + "es" + imc);
+          
 
-            
+            console.log("el imc de una altura de " + altura + " m con un peso de " + peso + " kg es de " + imc);
+
+            if (imc <= 18.4) {
+                console.log("se encuentra en bajo peso");
+            }
+            else if (imc > 18.4 && imc <= 23.9) {
+                console.log("se encuentra en peso normal");
+
+            }
+            else if (imc > 24 && imc <= 29.2) {
+                console.log("se encuentra en sobre peso");
+}
+            else if (imc > 29.3) {
+                console.log("se encuentra en obesidad ");
+            }
+
         }
 
 
