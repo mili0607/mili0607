@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ejecicio arreglos, listas </title>
+    <script>
+
+        function calcular() {
+            var sumi = 10-3
+
+        }
+
+
+        // declarar arreglo
+        var calificaciones = [8, 7, 10, 6, 9]
+        console.log("tam lista califs : " + calificaciones.length);
+
+        // formas de acceder
+        console.log("el primer elemento es:" + calificaciones[0]);
+
+        var ultimaCali = calificaciones[calificaciones.length - 1];
+
+        console.log("el ultimo elemento es" + ultimaCali);
+
+        //formas de modificar
+        calificaciones[4] = 10;
+        calificaciones[2] = 3 + 5;
+        calificaciones[1] = calificaciones[3];
+
+        var miCal = 7;
+        calificaciones[4] = miCal;
+        //calificaciones[2] = calcular();
+
+        console.log(calificaciones);
+
+        for (let i = 0; i < calificaciones.length; i++) {
+
+            console.log("pos" + i + " contiene " + calificaciones[i]);
+        }
+
+    
+        // promedio 
+        function calcularPro(arreglo) {
+            var suma = 0;
+            for (var i = 0; i < arreglo.length; i++) {
+
+                suma += arreglo[i];
+
+            }
+            var prom = suma / arreglo.length;
+
+            return prom; 
+        }
+        
+        var promCalif = calcularPro(calificaciones);
+        console.log("promedio calificaciones " + promCalif);
+        //alturas
+
+        var alturas = [1.7, 1.98, 1.5, 0.95]
+        console.log(alturas);
+
+        var promalturas = calcularPro(alturas);
+        console.log("promedio alturas" + promalturas);
+
+        console.log("prom costo" + calcularPro([18.3, 78.2, 45.2, 13.2]));
+
+        // minimo del arreglo, maximo del arreglo, cuantos numeros pares hay , mostar los elementos que se encuentres en una posion (la posion de abajo wey no los numeros) par 
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
