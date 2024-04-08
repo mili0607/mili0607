@@ -159,6 +159,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="cuadros-con-cliclos.html" />
+    <Content Include="dialogo.html" />
+    <Content Include="dialogo2.html" />
     <Content Include="ejercicio-ciclos.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="packages.config" />
