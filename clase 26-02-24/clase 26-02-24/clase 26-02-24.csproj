@@ -162,6 +162,7 @@
     <Content Include="dialogo.html" />
     <Content Include="dialogo2.html" />
     <Content Include="ejercicio-ciclos.html" />
+    <Content Include="examen.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
