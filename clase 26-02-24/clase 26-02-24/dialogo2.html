@@ -2,24 +2,239 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>dialogo cancion</title>
 
     <script>
-     document.addEventListener("DOMContentLoaded", function () {
-         const script = document.getElementById("script");
-         if (script) {
-             let scriptContent = script.trextContent;
 
-             let scriptText = document.getElementById("scriptText");
-             if (scriptText) {
-                 scriptText.textContent = scriptContent;
-             }
-         }
-     }
-     )
+        var colorlucifer = "#ffffff";
+        var coloralastor = "#ff0000";
+        var colorcharlie = "#ff0157";
+        var colorenifti = "#fc5e01";
+        var colormimzy = "#f876be";
+
+        var dialogo=[
+
+
+              {
+                  personaje: "Lucifer",
+                  color: colorlucifer,
+                  texto: "una auyuda es vital, de tu señor el infernal"
+              },
+
+              {
+                  personaje: "Lucifer",
+                  color: colorlucifer,
+                  texto: "mira las reseñas de tu papá..."
+              },
+
+              {
+                  personaje: "Lucifer",
+                  color: colorlucifer,
+                  texto: "grande, brabo, si que es un as"
+              },
+
+              {
+                  personaje: "Lucifer",
+                  color: colorlucifer,
+                  texto: "el pentagrama voy a golpear, ¡wap bam boom alacasam! "
+              },
+
+              {
+                  personaje: "Lucifer",
+                  color: colorlucifer,
+                  texto: "un cordero es lo que yo suelo cobrar, pero un descuento tendras ¡gracias! "
+              },
+
+
+              {
+                  personaje: "Charlie ",
+                  color: colorcharlie,
+                  texto: "gracias papá"
+              },
+
+              {
+                  personaje: "Lucifer",
+                  color: colorlucifer,
+                  texto: "en vez del moso ahora tienes al chef  "
+              },
+
+              {
+                  personaje: "Lucifer",
+                  color: colorlucifer,
+                  texto: "todo el menu completo gratis tambien, "
+              },
+
+              {
+                  personaje: "Lucifer",
+                  color: colorlucifer,
+                  texto: "te hare ganar por que yo desediri, espumantes y manjares para empezar  "
+              },
+              {
+                  personaje: "Alastor ",
+                  color: coloralastor,
+                  texto: "¿Quien estuvo siempre en pie?"
+              },
+
+              {
+                  personaje: "Alastor ",
+                  color: coloralastor,
+                  texto: "como monja ha sido fiel, ¿ Quien te hace reir casi para llorar?"
+              },
+
+              {
+                  personaje: "Alastor ",
+                  color: coloralastor,
+                  texto: "¡su increible productor!"
+              },
+
+
+              {
+                  personaje: "Charlie ",
+                  color: colorcharlie,
+                  texto: "es cierto"
+              },
+
+              {
+                  personaje: "Alastor ",
+                  color: coloralastor,
+                  texto: "dia a dia siempre estoy, su amigo hotelero soy"
+              },
+
+              {
+                  personaje: "Alastor ",
+                  color: coloralastor,
+                  texto: "¿quien fue quien destapo sus caños hoy"
+              },
+
+              {
+                  personaje: "Nifti",
+                  color: colorenifti,
+                  texto: "me atasque, eres mi heroe"
+              },
+
+              {
+                  personaje: "Charlie ",
+                  color: colorcharlie,
+                  texto: "que tierno"
+              },
+
+              {
+                  personaje: "Alastor ",
+                  color: coloralastor,
+                  texto: "me siento honrrado de tener tu amistad, eres la hija que no tuve jamas "
+
+              },
+
+              {
+                  personaje: "Lucifer",
+                  color: colorlucifer,
+                  texto: "¿Que?"
+              },
+
+              {
+                  personaje: "Alastor ",
+                  color: coloralastor,
+                  texto: "me iportas aunque no te pude engendrar  "
+
+              },
+
+              {
+                  personaje: "Lucifer",
+                  color: colorlucifer,
+                  texto: "no la toques"
+              },
+
+              {
+                  personaje: "Alastor ",
+                  color: coloralastor,
+                  texto: "mira que curioso, si quieres dime papá "
+
+              },
+
+              {
+                  personaje: "Alastor ",
+                  color: coloralastor,
+                  texto: "dice que cuando buscas ayuda, ve siempre donde haya menos duda "
+
+              },
+
+              {
+                  personaje: "Lucifer",
+                  color: colorlucifer,
+                  texto: "yo digo que para consolarte no hay mejor ayuda que el poder de un anguel, que casualmente tu pariente es "
+              },
+
+              {
+                  personaje: "Alastor ",
+                  color: coloralastor,
+                  texto: "y aunque es triste havece tu papá un fiasgo es, mejor que elijas bien a tu familia  "
+
+              },
+
+              {
+                  personaje: "Lucifer",
+                  color: colorlucifer,
+                  texto: "que menton de patrañas "
+              },
+
+              {
+                  personaje: "Alastor ",
+                  color: coloralastor,
+                  texto: "no interrumpas mi cancion "
+
+              },
+
+              {
+                  personaje: "Lucifer",
+                  color: colorlucifer,
+                  texto: "cual cancion yo la empece  "
+              },
+
+              {
+                  personaje: "Alastor ",
+                  color: coloralastor,
+                  texto: "la estoy cantando y la terminare "
+              },
+
+              {
+                  personaje: "mimzy",
+                  color: colormimzy,
+                  texto: "llegue mirenme se que estaban esperandome, o si que genial  "
+              },
+
+              {
+                  personaje: "mimzy",
+                  color: colormimzy,
+                  texto: " devorada peri aqui al final, aqui llegue mimzy"
+              }
+        ];
+
+        var indiceDialogo= 0;
+
+        function leerSiguiente() {
+            if (indiceDialogo >= indiceDialogo)
+                var entrada= dialogo[indiceDialogo];
+            console.log(entrada.personaje + ": " + entrada.texto) 
+
+            indiceDialogo ++;
+        }
+
+        var nuevodiv = document.createElement ("DIV");
+        nuevodiv.className = "itemDialogo"
+
+         
+        var etiquetaPers= document.activeElement("LAVEL")
+        var
+    
+     
+
     </script>
+    
 </head>
 <body>
+
+    <button id="bonton" onclick="leerSiguiente()">Continuar dialogo</button>
+    <div id="contenedorDialogo"></div>
 
 </body>
 </html>
