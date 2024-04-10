@@ -12,7 +12,7 @@
         var colorenifti = "#fc5e01";
         var colormimzy = "#f876be";
 
-        var dialogo=[
+        var dialogo= [
 
 
               {
@@ -205,36 +205,52 @@
               {
                   personaje: "mimzy",
                   color: colormimzy,
-                  texto: " devorada peri aqui al final, aqui llegue mimzy"
+                  texto: " devorada pero aqui al final, aqui llegue mimzy"
               }
         ];
 
         var indiceDialogo= 0;
 
         function leerSiguiente() {
-            if (indiceDialogo >= indiceDialogo)
-                var entrada= dialogo[indiceDialogo];
-            console.log(entrada.personaje + ": " + entrada.texto) 
+            if (indiceDialogo >= indiceDialogo) {
+                var entrada = dialogo[indiceDialogo];
+                console.log(entrada.personaje + ": " + entrada.texto)
 
-            indiceDialogo ++;
+                indiceDialogo++;
+            }
+
+            else {
+
+                alert("fin de los dialogos");
+
+            }
+
+
+            var nuevoDiv = document.createElement("Div");
+            nuevoDiv.className = "itemDialogo";
+
+
+
+            var etiquetaPer = document.activeElement("Label");
+            var parrafoTexto = document.activeElement("p");
+
+            etiquetaPer.innerHTML = entrada.personaje;
+            parrafoTexto.innerHTML = entrada.texto;
+
+
+            nuevoDiv.appendChild(etiquetaPer);
+            nuevoDiv.appendChild(parrafoTexto);
+
+            contenedorDialogo.appendChild(nuevoDiv);
         }
 
-        var nuevodiv = document.createElement ("DIV");
-        nuevodiv.className = "itemDialogo"
-
-         
-        var etiquetaPers= document.activeElement("LAVEL")
-        var
-    
-     
-
     </script>
-    
 </head>
 <body>
 
-    <button id="bonton" onclick="leerSiguiente()">Continuar dialogo</button>
-    <div id="contenedorDialogo"></div>
+   
+    <div id="contenedorDialogo" class="itemDialogo"></div>
+    <button id="continuar" onclick="leerSiguiente()">Continuar</button>
 
 </body>
 </html>

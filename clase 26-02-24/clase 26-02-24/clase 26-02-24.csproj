@@ -164,6 +164,11 @@
     <Content Include="ejercicio-ciclos.html" />
     <Content Include="examen.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="img\dialogos_can\descarga.jfif" />
+    <Content Include="img\dialogos_can\images %281%29.jfif" />
+    <Content Include="img\dialogos_can\images %282%29.jfif" />
+    <Content Include="img\dialogos_can\images.jfif" />
+    <Content Include="img\dialogos_can\sddefault.jpg" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
