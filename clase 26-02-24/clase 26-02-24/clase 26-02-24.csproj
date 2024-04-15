@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>clase_26_02_24</RootNamespace>
     <AssemblyName>clase 26-02-24</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -164,11 +164,11 @@
     <Content Include="ejercicio-ciclos.html" />
     <Content Include="examen.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="img\dialogos_can\descarga.jfif" />
-    <Content Include="img\dialogos_can\images %281%29.jfif" />
-    <Content Include="img\dialogos_can\images %282%29.jfif" />
-    <Content Include="img\dialogos_can\images.jfif" />
-    <Content Include="img\dialogos_can\sddefault.jpg" />
+    <Content Include="img\ddn4fk3-040cc53a-f08d-44ce-b022-0310bff99907.png" />
+    <Content Include="img\Lucifer.%28Hazbin%29.600.3724984.jpg" />
+    <Content Include="img\R.jpg" />
+    <Content Include="img\R.png" />
+    <Content Include="img\sddefault.jpg" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

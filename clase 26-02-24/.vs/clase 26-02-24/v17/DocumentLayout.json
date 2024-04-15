@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\EMI\\Desktop\\mili0607\\clase 26-02-24\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5D49A67-9270-4855-AA6F-309572B61E46}|clase 26-02-24\\clase 26-02-24.csproj|c:\\users\\emi\\desktop\\mili0607\\clase 26-02-24\\clase 26-02-24\\dialogo.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5D49A67-9270-4855-AA6F-309572B61E46}|clase 26-02-24\\clase 26-02-24.csproj|solutionrelative:clase 26-02-24\\dialogo.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A5D49A67-9270-4855-AA6F-309572B61E46}|clase 26-02-24\\clase 26-02-24.csproj|c:\\users\\emi\\desktop\\mili0607\\clase 26-02-24\\clase 26-02-24\\dialogo2.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5D49A67-9270-4855-AA6F-309572B61E46}|clase 26-02-24\\clase 26-02-24.csproj|solutionrelative:clase 26-02-24\\dialogo2.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5D49A67-9270-4855-AA6F-309572B61E46}|clase 26-02-24\\clase 26-02-24.csproj|C:\\Users\\EMI\\Desktop\\mili0607\\clase 26-02-24\\clase 26-02-24\\tablas.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5D49A67-9270-4855-AA6F-309572B61E46}|clase 26-02-24\\clase 26-02-24.csproj|solutionrelative:clase 26-02-24\\tablas.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A5D49A67-9270-4855-AA6F-309572B61E46}|clase 26-02-24\\clase 26-02-24.csproj|C:\\Users\\EMI\\Desktop\\mili0607\\clase 26-02-24\\clase 26-02-24\\dialogo.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5D49A67-9270-4855-AA6F-309572B61E46}|clase 26-02-24\\clase 26-02-24.csproj|solutionrelative:clase 26-02-24\\dialogo.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5D49A67-9270-4855-AA6F-309572B61E46}|clase 26-02-24\\clase 26-02-24.csproj|C:\\Users\\EMI\\Desktop\\mili0607\\clase 26-02-24\\clase 26-02-24\\ejercicio-ciclos.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -17,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A5D49A67-9270-4855-AA6F-309572B61E46}|clase 26-02-24\\clase 26-02-24.csproj|C:\\Users\\EMI\\Desktop\\mili0607\\clase 26-02-24\\clase 26-02-24\\arreglos.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A5D49A67-9270-4855-AA6F-309572B61E46}|clase 26-02-24\\clase 26-02-24.csproj|solutionrelative:clase 26-02-24\\arreglos.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D49A67-9270-4855-AA6F-309572B61E46}|clase 26-02-24\\clase 26-02-24.csproj|C:\\Users\\EMI\\Desktop\\mili0607\\clase 26-02-24\\clase 26-02-24\\tablas.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5D49A67-9270-4855-AA6F-309572B61E46}|clase 26-02-24\\clase 26-02-24.csproj|solutionrelative:clase 26-02-24\\tablas.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,12 +35,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "dialogo2.html",
+              "DocumentMoniker": "C:\\Users\\EMI\\Desktop\\mili0607\\clase 26-02-24\\clase 26-02-24\\dialogo2.html",
+              "RelativeDocumentMoniker": "clase 26-02-24\\dialogo2.html",
+              "ToolTip": "C:\\Users\\EMI\\Desktop\\mili0607\\clase 26-02-24\\clase 26-02-24\\dialogo2.html",
+              "RelativeToolTip": "clase 26-02-24\\dialogo2.html",
+              "ViewState": "AQIAAB8BAAAAAAAAAAAAwDUBAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-15T01:43:31.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "dialogo.html",
               "DocumentMoniker": "C:\\Users\\EMI\\Desktop\\mili0607\\clase 26-02-24\\clase 26-02-24\\dialogo.html",
               "RelativeDocumentMoniker": "clase 26-02-24\\dialogo.html",
               "ToolTip": "C:\\Users\\EMI\\Desktop\\mili0607\\clase 26-02-24\\clase 26-02-24\\dialogo.html",
               "RelativeToolTip": "clase 26-02-24\\dialogo.html",
-              "ViewState": "AQIAAEkBAAAAAAAAAAAAAEkBAAAxAAAA",
+              "ViewState": "AQIAAB8BAAAAAAAAAAAAACoBAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-04-07T04:17:15.964Z",
               "EditorCaption": ""
@@ -51,7 +68,8 @@
               "RelativeToolTip": "clase 26-02-24\\arreglos.html",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-03-06T03:16:32.101Z"
+              "WhenOpened": "2024-03-06T03:16:32.101Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -63,11 +81,12 @@
               "RelativeToolTip": "clase 26-02-24\\ejercicio-ciclos.html",
               "ViewState": "AQIAADkAAAAAAAAAAAAAAEQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-02-28T04:56:28.268Z"
+              "WhenOpened": "2024-02-28T04:56:28.268Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "tablas.html",
               "DocumentMoniker": "C:\\Users\\EMI\\Desktop\\mili0607\\clase 26-02-24\\clase 26-02-24\\tablas.html",
               "RelativeDocumentMoniker": "clase 26-02-24\\tablas.html",
