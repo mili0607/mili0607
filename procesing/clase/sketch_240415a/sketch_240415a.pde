@@ -1,22 +1,17 @@
-/**
- * Embedding Iteration. 
- * 
- * Embedding "for" structures allows repetition in two dimensions. 
- *
- */
+// tamaño de lienzo
+size(600, 700);
 
+// color fondo 
+background(#7AA2E3);
 
-size(640, 360); 
-background(0); 
+//color de linea
+stroke(#6AD4DD);
 
-int gridSize = 40;
+// relleno rectangulo
+fill(#F8F6E3);
 
-for (int x = gridSize; x <= width - gridSize; x += gridSize) {
-  for (int y = gridSize; y <= height - gridSize; y += gridSize) {
-    noStroke();
-    fill(255);
-    rect(x-1, y-1, 3, 3);
-    stroke(255, 100);
-    line(x, y, width/2, height/2);
-  }
-}
+// figura rectangular
+rect(50, 55, 200, 500);
+//circulo
+
+ellipse( 300, 100, 400, 400);
