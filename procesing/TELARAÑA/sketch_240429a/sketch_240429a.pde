@@ -5,9 +5,11 @@ size(800, 800);
 
 int centroX= 400;
 int centroY = 400;
-
 int separacion= 80;
 int sepgrados = 45;
+
+ background(#FF76CE);
+   stroke(#121481);
 
 line(0,800,800,0);
 line(0,0,800, 800);
@@ -22,14 +24,19 @@ for(int i =1 ; i < 8; i++){
   int y = centroY + separacion * i;
   
    int xinter = centroX + sepgrados * i;
-    int yinter = centroY + sepgrados * i;
+   int yinter = centroY + sepgrados * i;
+  
   
   line( x,centroY,xinter, yinter);
-   line(xinter,yinter,centroX , y);
-   line(centroX,y,centroX -56*i ,centroY +56*i);
+  line(xinter,yinter,centroX , y);
    
-    line(centroX - sepgrados*i ,centroY + sepgrados*i, centroX -separacion *i, centroY);
+  line(centroX,y,centroX -sepgrados*i ,centroY +sepgrados*i);
+  line(centroX - sepgrados*i ,centroY + sepgrados*i, centroX -separacion *i, centroY);
     
-    line(centroX - sepgrados*i ,centroY- sepgrados*i, centroX -separacion *i, centroY);
+ line(centroX - separacion*i ,centroY, centroX -sepgrados *i, centroY- sepgrados*i);
+  line(centroX - sepgrados*i ,centroY- sepgrados*i, centroX, centroY-separacion *i);
+  
+  line( centroX, centroY-separacion *i,centroX +sepgrados *i,centroY- sepgrados*i);
+  line( centroX +sepgrados *i,centroY- sepgrados*i, x, centroY);
   
 }
